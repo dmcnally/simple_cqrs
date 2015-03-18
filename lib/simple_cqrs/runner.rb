@@ -16,7 +16,6 @@ module SimpleCqrs::Runner
   def project_events(events)
     load_configuration
     events.each do |raw_event| 
-      event = raw_event.name.constantize.new(event.values)
       project_event(event) 
     end
   end
