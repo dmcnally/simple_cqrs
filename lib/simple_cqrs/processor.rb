@@ -16,7 +16,7 @@ module SimpleCqrs
     
     def next_id_for(command)
       # TODO: Turn this into a strategy.
-      ::CommandId.next(command.class.name)
+      ::SimpleCqrs::CommandId.next(command.class.name)
     end
     
     attr_reader :events
