@@ -1,5 +1,5 @@
 module SimpleCqrs
-  module EventStore
+  module Store
     class ActiveRecordEventStore
       
       def append(event)

@@ -80,7 +80,7 @@ module SimpleCqrs::Runner
   end
   
   def event_store
-    @event_store ||= ::SimpleCqrs::EventStore::ActiveRecordEventStore.new
+    @event_store ||= ::SimpleCqrs::Store::ActiveRecordEventStore.new
   end
 
 end
