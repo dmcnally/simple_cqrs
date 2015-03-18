@@ -3,7 +3,7 @@ module SimpleCqrs
     class ActiveRecordEventStore
       
       def append(event)
-        ::Event.create!(name: event.class.name, values: event.attributes)
+        ::SimpleCqrs::EventStore.create!(name: event.class.name, values: event.attributes)
       end
       
     end
