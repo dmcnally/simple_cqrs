@@ -1,3 +1,3 @@
 = SimpleCqrs
 
-This is a prototype of an EventSource gem and uses MIT-LICENSE.
+This is a prototype of an CQRS/EventSource gem and uses MIT-LICENSE.
